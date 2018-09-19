@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script>
+        function displayRandomImage() {
+            var imagePaths = ["rand1.jpg", "rand2.jpg", "rand3.jpg"]; 
+            
+            var rand = Math.floor(Math.random() * 3);
+            
+            document.getElementById("randImage").src = imagePaths[rand];
+            
+        }
+        </script>
+
+    </head>
+
+    <body>
+        <h3>Project 1</h3>
+        <p>This page displays an image (The second image required by this project, 
+        no less) at the press of a button! <br><br>PS: There are only three images. 
+        Can you find them all?</p>
+    
+        <button onclick="displayRandomImage()">Try your luck!</button>
+        
+        
+        <img id="randImage">
+        
+    </body>
+</html>
